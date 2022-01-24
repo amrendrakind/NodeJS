@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Node JS Experiment Files",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amrendrakind/NodeJS.git"
+  },
+  "author": "Amrendra K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amrendrakind/NodeJS/issues"
+  },
+  "homepage": "https://github.com/amrendrakind/NodeJS#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
