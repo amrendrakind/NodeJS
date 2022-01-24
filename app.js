@@ -1,7 +1,18 @@
-const http = require("http")
-const routes = require('./routes')
+const http = require('http')
+const express = require('express')
+const { Console } = require('console')
+const app = express()
 
-const server = http.createServer( routes);
+app.use((req, res, next)=>{
+    console.log("In the Middleware")
+    next()
+})
 
-PORT = 5000
-server.listen(PORT,console.log(`Server is listening at Port ${PORT}`));
+app.use((req, res, next)=>{
+    console.log("In the another Middleware")
+    res.send('<h1>Hellow from Express!!!</h1>')
+})
+
+const server = http.createServer(app)
+const PORT = 4000
+server.listen(PORT, console.log(`Server is running on ${PORT}`))
